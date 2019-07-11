@@ -1,0 +1,192 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#whatwedo .card{
+    min-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#whatwedo img{
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#whatwedo h5{
+    margin-bottom: 20px;
+}
+
+#whatwedo p{
+    margin-bottom: 20px;
+}
+
+#whatwedo{
+    margin: 30px 0px 30px 0px;
+}
+
+/* About */
+#contact-us{
+    height: 92vh;
+    z-index: 0;
+    margin:0;
+    background: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-us:before {
+    content:"";
+    position:absolute;
+    z-index: -3;
+    top:0;
+    bottom:0;
+    left:-60%;
+    width:100%;
+    background:#f44336;
+    transform:skew(-35deg);
+    box-shadow: 6px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#contact-us:after {
+    z-index: -2;
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: -65%;
+    width: 100%;
+    background:#b71c1c;
+    transform:skew(-30deg);
+    box-shadow: 6px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#contact-us h1{
+    z-index: 2;
+}
+
+#contact-us button{
+    width: 100%;
+}
+
+#contact-us p{
+    position: absolute;
+    top: 55%;
+}
+
+/* Image Viewer */
+#carousel img{
+    height: 92vh;
+    object-fit: cover;
+}
+
+#carousel{
+    margin: 70px 0px 50px 0px;
+}
+
+#about i{
+    font-size: 40px;
+    color: rgba(244, 67, 54, 0.7);
+}
+
+
+#customers .fa-quote-left{
+    font-size: 70px;
+    opacity: 0.3;
+    position: absolute;
+    left: 30px;
+}
+
+#customers .fa-quote-right{
+    font-size: 70px;
+    opacity: 0.3;
+    position: absolute;
+    right: 40px;
+}
+
+#credits .i-contact{
+    border: none;
+    font-size: 20px;
+    opacity: 0.5;
+    background: none;
+    margin-right: 20px;
+    transition: all 0.4s;
+}
+
+#credits .i-contact:hover{
+    opacity: 1;
+}
+
+#credits .container{
+    margin: 30px 0px 20px 0px;
+}
+
+
+@media(max-width:1000px){
+    #contact-us .display-2{
+        font-size: 80px;
+    }
+
+    #contact-us p{
+        position: static;
+    }
+}
+
+
+/* Phones only */
+@media only screen and (max-device-width: 1024px) {
+    .display-1{
+        font-size: 40px;
+    }
+
+    #contact-us .display-2{
+        position: absolute;
+        top: 10px;
+        font-size: 48px;
+        transform:rotate(-30deg);
+    }
+
+    #contact-us{
+        height: 93vh;
+    }
+    
+    #contact-us:before {
+        content:"";
+        position:absolute;
+        z-index: -3;
+        top:0;
+        bottom:0;
+        left:-100%;
+        width:40%;
+        background: #f44336;
+        transform:skew(-60deg);
+        box-shadow: 6px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact-us:after {
+        z-index: -2;
+        content:"";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left: -110%;
+        width: 40%;
+        background:#b71c1c;
+        transform:skew(-60deg);
+        box-shadow: 6px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact-us h1{
+        z-index: 2;
+    }
+
+    #contact-us .form-row{
+        position: absolute;
+        top: 170px;
+    }
+    #contact-us p{
+        margin: 10px 0px 30px 0px;
+        color: black;
+    }
+}
