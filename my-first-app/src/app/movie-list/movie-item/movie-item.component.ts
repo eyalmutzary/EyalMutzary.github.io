@@ -17,7 +17,7 @@ export class MovieItemComponent implements OnInit {
   private confirmSub: Subscription;
   private closeSub: Subscription;
   @Output() updated = new EventEmitter();
-  private hover: boolean = false;
+  public hover: boolean = false;
 
   constructor(private movieListService:MovieListService, private componentFactoryResolver: ComponentFactoryResolver) { }
 
